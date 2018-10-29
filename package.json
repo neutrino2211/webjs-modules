@@ -1,0 +1,42 @@
+{
+  "name": "webjs-modules",
+  "version": "0.0.1",
+  "description": "UI and utility modules for webjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel test/index.html",
+    "component-build": "stencil build",
+    "component-start": "stencil build --dev --watch --serve",
+    "component-test": "stencil test --spec --e2e",
+    "component-test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neutrino2211/webjs-modules.git"
+  },
+  "keywords": [
+    "webjs",
+    "framework7"
+  ],
+  "author": "Tsowa Mainasara Al-amin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neutrino2211/webjs-modules/issues"
+  },
+  "homepage": "https://github.com/neutrino2211/webjs-modules#readme",
+  "dependencies": {
+    "@polymer/iron-icon": "^3.0.1",
+    "@polymer/polymer": "^3.1.0",
+    "@stencil/core": "^0.15.0",
+    "framework7": "^3.4.3",
+    "hybrids": "^1.4.1",
+    "onsenui": "^2.10.5",
+    "slim-js": "^4.0.5",
+    "stencil": "0.0.5",
+    "template7": "^1.4.0"
+  },
+  "devDependencies": {
+    "parcel": "^1.10.3"
+  }
+}
