@@ -6,7 +6,7 @@ import _ons from "./onsenui/js/onsenui";
 export const ons = _ons;
 export var UI = {
     init(){
-        var os = ""
+        var os = "ios"
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     
           // Windows Phone must come first because its UA also contains "Android"
@@ -22,11 +22,8 @@ export var UI = {
         else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
             os = "ios";
         }
-    
-        else {
-            os = "android"
-        }
         console.log("OS:",os)
         _ons.platform.select(os);
+        window.ons = _ons;
     }
 }
